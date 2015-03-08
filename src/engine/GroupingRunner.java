@@ -13,9 +13,11 @@ public class GroupingRunner {
 		LinkedList<Student> list;
 		
 		dataLoader = new CSVLoader(new File("C:\\Users\\Thai Nguyen\\Desktop\\Form1.csv"));
-		ruleLoader = new RuleLoader(null); // That's a big no-no.
-		ruleLoader.generateRulesFromProgram(); //WTF are you doing here?
+		ruleLoader = new RuleLoader(new File("C:\\Users\\Thai Nguyen\\Desktop\\Rule1.csv"));
+		
 		list = dataLoader.readGoogleFile();
+		ruleLoader.generateRulesFromProgram(); //WTF are you doing here?
+		ruleLoader.readFile();
 		
 		for (Student s : list) {
 			System.out.println(s);
