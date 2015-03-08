@@ -5,11 +5,20 @@ public class Student implements Matchable, Comparable<Student> {
 	private final String firstName;
 	private final String lastName;
 	private Personality personality;
+	private final char gender;
 	
 	public Student (String firstName, String lastName, Personality personality) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.personality = personality;
+		this.gender = 0;
+	}
+	
+	public Student (String firstName, String lastName, Personality personality, char gender) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.personality = personality;
+		this.gender = gender;
 	}
 	
 	public void setPersonality(Personality personality) {
@@ -35,6 +44,6 @@ public class Student implements Matchable, Comparable<Student> {
 	}
 	
 	public String toString() {
-		return lastName + ", " + firstName + " - " + personality;
+		return lastName + ", " + firstName + " (" + gender  + " )" + " - " + personality;
 	}
 }
