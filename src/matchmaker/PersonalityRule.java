@@ -27,7 +27,7 @@ public class PersonalityRule {
 	public int getCompatibility(Personality a, Personality b) {
 		if (!isApplicable(a, b)) return 0;
 		int rate = 0;
-		//SHITTY WEIGHTING SYSTEM COMING SOON
+		
 		if (a.toString().matches(regexA)) {
 			if (regexA.matches("[EI]...")) rate += Math.abs(a.getMind()) / 50 * effect;
 			if (regexA.matches(".[NS]..")) rate += Math.abs(a.getEnergy()) / 50 * effect;
