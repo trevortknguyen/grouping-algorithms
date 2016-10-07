@@ -1,9 +1,12 @@
-Grouping Algorithms
-by Thai Nguyen
-===================
+# Grouping Algorithms
+This project aims to create a way for students or people in general to be put into groups in order to optimize personalities for teamwork. The algorithm model is currently based on the Myers-Briggs Type Indicators.
 
-Welcome!
+## Current State
+Right now this project is not in any sort of functioning state.
 
-Grouping Algorithms is a software to match students up with each other based on their personalities.
-Using the criteria on 16personalities.com, students' compatibility scores will be determined by their personality types and how well two certain personality types match up with each other.
-(For example, two people who are extroverted and kind to each other would be matched up well.)
+## Future Goals
+* UI using JavaFX
+* file system access
+* unit testing
+* matchmaking engine
+* (neural network training)
